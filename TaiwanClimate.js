@@ -205,7 +205,8 @@ if(w<300){
   alert("Your screen is too small. Don't use this app");
   document.location.href='https://liugoldent.github.io/LgtProfile/profile.html';
 }else if(300<=w && w<450){
-  $('#TaiwanMap').css('width', '45vh')
+  alert("Your screen is too small. Don't use this app");
+  document.location.href='https://liugoldent.github.io/LgtProfile/profile.html';
 }else if(450<=w && w<600){
    $('#TaiwanMap').css('width', '45vh')
 }else if(600<=w && w<663){
