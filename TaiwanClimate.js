@@ -215,7 +215,7 @@ if(w<300){
   $('#TaiwanMap').css('width', '70vh')
 }else if(1200<=w && w<1500){
   $('#TaiwanMap').css('width', '70vh')
-}else if(1500<=w){
+}else{
    $('#TaiwanMap').css('width', '100vh')
 }
 
