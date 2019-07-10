@@ -1,9 +1,29 @@
- var width=document.body.clientWidth;
-if(width<663){
-     alert("Your screen is too small. Don't use this app");
-    document.location.href='https://liugoldent.github.io/LgtProfile/profile.html';
- }
-  
+var w = $(window).width();
+console.log(w);
+var width = document.body.clientWidth;
+console.log(width);
+
+if(w<300){
+  alert(width);
+}else if(300<=width && width<450){
+  alert(width);
+  $('#TaiwanMap').css('width', '45vh')
+}else if(450<=width && width<600){
+  alert(width);
+  $('#TaiwanMap').css('width', '45vh')
+}else if(600<=width && width<663){
+  alert(width);
+  $('#TaiwanMap').css('width','50vh')
+}else if(663<=width && width<1200){
+  alert(width);
+  $('#TaiwanMap').css('width', '70vh')
+}else if(1200<=width && width<1500){
+  alert(width);
+  $('#TaiwanMap').css('width', '70vh')
+}else{
+  alert(width);
+  $('#TaiwanMap').css('width', '100vh')
+}
 
 
 let vm = new Vue({
