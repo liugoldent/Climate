@@ -198,13 +198,15 @@ let vm = new Vue({
 //     document.location.href='https://liugoldent.github.io/LgtProfile/profile.html';
 // }
 var w = $(window).width();
-
+console.log(w)
 var width = document.body.clientWidth;
 console.log(width)
-if(width<500){
+if(width<300){
   alert("Your screen is too small. Don't use this app");
   document.location.href='https://liugoldent.github.io/LgtProfile/profile.html';
-}else if(500<=width && width<600){
+}else if(300<=width && width<450){
+  $('#TaiwanMap').css('width', '45vh')
+}else if(450<=width && width<600){
    $('#TaiwanMap').css('width', '45vh')
 }else if(600<=width && width<663){
   $('#TaiwanMap').css('width','50vh')
