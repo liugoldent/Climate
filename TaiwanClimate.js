@@ -4,27 +4,28 @@ var width = document.body.clientWidth;
 console.log(width);
 
 if(w<300){
-  alert(width);
+  //alert(width);
+}else if(width==980){
+  $('#TaiwanMap').css('width', '50vh')
 }else if(300<=width && width<450){
-  alert(width);
+  //alert(width);
   $('#TaiwanMap').css('width', '45vh')
 }else if(450<=width && width<600){
-  alert(width);
+  //alert(width);
   $('#TaiwanMap').css('width', '45vh')
 }else if(600<=width && width<663){
-  alert(width);
+  //alert(width);
   $('#TaiwanMap').css('width','50vh')
-}else if(663<=width && width<1200){
-  alert(width);
+}else if(663<=width && width<950){
+  //alert(width);
   $('#TaiwanMap').css('width', '70vh')
 }else if(1200<=width && width<1500){
-  alert(width);
+  //alert(width);
   $('#TaiwanMap').css('width', '70vh')
 }else{
-  alert(width);
+  //alert(width);
   $('#TaiwanMap').css('width', '100vh')
 }
-
 
 let vm = new Vue({
   el: '#app',
