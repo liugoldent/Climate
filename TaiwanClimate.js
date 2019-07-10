@@ -1,3 +1,10 @@
+ var width=document.body.clientWidth;
+if(width<663){
+     alert("Your screen is too small. Don't use this app");
+    document.location.href='https://liugoldent.github.io/LgtProfile/profile.html';
+ }
+  
+
 
 let vm = new Vue({
   el: '#app',
@@ -192,33 +199,4 @@ let vm = new Vue({
 })
 
 
-// var width=document.body.clientWidth;
-// if(width<663){
-//     alert("Your screen is too small. Don't use this app");
-//     document.location.href='https://liugoldent.github.io/LgtProfile/profile.html';
-// }
-var w = $(window).width();
-console.log(w);
-var width = document.body.clientWidth;
-console.log(width);
 
-if(width<300){
-  alert("Your screen is too small. Don't use this app");
-  document.location.href='https://liugoldent.github.io/LgtProfile/profile.html';
-}else if(300<=width && width<450){
-  alert("Your screen is too small. Don't use this app");
-  document.location.href='https://liugoldent.github.io/LgtProfile/profile.html';
-}else if(450<=width && width<600){
-   //$('#TaiwanMap').css('width', '45vh')
-  document.location.href='https://liugoldent.github.io/LgtProfile/profile.html';
-}else if(600<=width && width<663){
-  //$('#TaiwanMap').css('width','50vh')
-  document.location.href='https://liugoldent.github.io/LgtProfile/profile.html';
-}else if(663<=width && width<1200){
-  $('#TaiwanMap').css('width', '70vh')
-}else if(1200<=width && width<1500){
-  $('#TaiwanMap').css('width', '70vh')
-}else{
-   $('#TaiwanMap').css('width', '100vh')
-}
-  
