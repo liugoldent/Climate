@@ -197,6 +197,7 @@ let vm = new Vue({
 //     alert("Your screen is too small. Don't use this app");
 //     document.location.href='https://liugoldent.github.io/LgtProfile/profile.html';
 // }
+var w = $(window).width();
 
 var width = document.body.clientWidth;
 console.log(width)
