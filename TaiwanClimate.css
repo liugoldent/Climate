@@ -1,0 +1,145 @@
+*{
+  font-family: 'Times New Roman', Times, serif
+}
+
+#app{
+  background-color:#222;
+}
+div.container-fluid{
+  padding:0px;
+  border:0px;
+  margin:0px;
+}
+
+#TaiwanMap{
+  position: relative;
+  margin:0px auto;
+  display:block;
+  
+}
+svg{
+  height:100vh;
+  width:100vh
+}
+path{
+  stroke:white;
+  fill:transparent;
+  transition:0.5s;
+  cursor:pointer;
+}
+path:hover{
+  fill:wheat;
+  transform: translate(3px,-3px);
+}
+
+
+#content{
+  color:black;
+  animation: opacity 5s linear;
+  height:100%/7;
+  margin:auto;
+}
+
+@keyframes opacity{
+  0%{
+    opacity:0;
+  }
+  50%{
+    opacity:1;
+  }
+}
+
+
+
+#time{
+  top:5%;
+}
+
+#time,#location,#temp,#rain,#uvi,#hightemp,#lowtemp{
+  height:11.285vh;
+  background-color: white;
+  margin-bottom:20px;
+  
+  opacity:0.6;
+  border-radius: 10px;
+  text-align: left;
+  line-height: 11.285vh;
+  font-size:25px;
+  padding-left: 35px;
+  display:block;
+}
+
+#time:hover,#location:hover,#temp:hover,#rain:hover,#uvi:hover,#hightemp:hover,#lowtemp:hover{
+  transform: translate(0px,5px);
+  transition-duration:1s;
+  background-color: wheat;
+  cursor:pointer;
+
+}
+
+#notice{
+  height:11.285vh;
+  width:auto;
+  background-color:#F1948A   ;
+  margin-bottom:20px;
+  opacity:0.6;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 11.285vh;
+  font-size:25px;
+  padding-left: 35px;
+}
+
+#time,#location,#temp,#rain,#uvi,#hightemp,#lowtemp *{
+  top:20px;
+}
+
+
+
+body #section5{
+    background-image:url(https://i.imgur.com/WiHcgRV.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: center;
+    height: 400px;;
+    max-width: 100%;
+}
+
+#section5_text{
+    position:relative;
+    margin:0px auto;
+    color:antiquewhite;
+    text-align:center;
+    top:25%;
+    word-spacing:10px;
+}
+
+#section5_icon{
+    position:relative;
+    margin:0px auto;
+    color:antiquewhite;
+    text-align:center;
+    top:25%;
+    word-spacing:20px;
+}
+
+
+#foorter{
+    background-color:black;
+    height:100px;
+    max-width: 100%;
+    position:relative;
+    margin:0px auto;
+    color:antiquewhite;
+    text-align:center;
+}
+
+#copyright{
+    position:relative;
+    top:35%;
+}
+
+#section5_icon *:hover{
+    color:peachpuff;
+}
