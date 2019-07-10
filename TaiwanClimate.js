@@ -201,44 +201,24 @@ var w = $(window).width();
 console.log(w);
 var width = document.body.clientWidth;
 console.log(width);
-if(w<300){
+
+if(width<300){
   alert("Your screen is too small. Don't use this app");
   document.location.href='https://liugoldent.github.io/LgtProfile/profile.html';
-}else if(300<=w && w<450){
+}else if(300<=width && width<450){
   alert("Your screen is too small. Don't use this app");
   document.location.href='https://liugoldent.github.io/LgtProfile/profile.html';
-}else if(450<=w && w<600){
-   $('#TaiwanMap').css('width', '45vh')
-}else if(600<=w && w<663){
-  $('#TaiwanMap').css('width','50vh')
-}else if(663<=w && w<1200){
+}else if(450<=width && width<600){
+   //$('#TaiwanMap').css('width', '45vh')
+  document.location.href='https://liugoldent.github.io/LgtProfile/profile.html';
+}else if(600<=width && width<663){
+  //$('#TaiwanMap').css('width','50vh')
+  document.location.href='https://liugoldent.github.io/LgtProfile/profile.html';
+}else if(663<=width && width<1200){
   $('#TaiwanMap').css('width', '70vh')
-}else if(1200<=w && w<1500){
+}else if(1200<=width && width<1500){
   $('#TaiwanMap').css('width', '70vh')
 }else{
    $('#TaiwanMap').css('width', '100vh')
 }
-
-//  if (width <= 500 && width > 600){
-//   $('#TaiwanMap').css('width','50vh')
-// }else if(width<=1200&& width>663){
-//   $('#TaiwanMap').css('width', '70vh')
-// }else if(width<=1500 && width>1200){
-//   $('#TaiwanMap').css('width', '70vh')
-// }else if(width>1500){
-//    $('#TaiwanMap').css('width', '100vh')
-// }else if(width<=600 && width>450){
-//    $('#TaiwanMap').css('width', '45vh')
-//   alert("Your screen is too small. Don't use this app");
-//   document.location.href='https://liugoldent.github.io/LgtProfile/profile.html';
-// }else if(width<450){
-//    $('#TaiwanMap').css('width', '50vh')
-//    alert("If U want to see the Big Map , Please turn your screen Landscape");
-//     alert("Your screen is too small. Don't use this app");
-//   document.location.href='https://liugoldent.github.io/LgtProfile/profile.html';
-// }else if(width<=300){
-//   alert("Your screen is too small. Don't use this app");
-//   document.location.href='https://liugoldent.github.io/LgtProfile/profile.html';
-// }
-  
   
